@@ -12,21 +12,21 @@
   {
       "preview": "https://images.pexels.com/photos/20230685/pexels-photo-20230685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "original": "https://images.pexels.com/photos/20230685/pexels-photo-20230685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "description": "london"
+      "description": "beach"
   },
   {
       "preview": "https://images.pexels.com/photos/22866338/pexels-photo-22866338.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
       "original": "https://images.pexels.com/photos/22866338/pexels-photo-22866338.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-      "description": "flower.jpeg"
+      "description": "view"
   },
   {
       "preview": "https://images.pexels.com/photos/13623241/pexels-photo-13623241.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
       "original": "https://images.pexels.com/photos/13623241/pexels-photo-13623241.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-      "description": "wave.jpg"
+      "description": "wave"
   },
   {
       "preview": "https://images.pexels.com/photos/19221472/pexels-photo-19221472.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "original": "https://images.pexels.com/photos/19221472/pexels-photo-19221472.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "description": "wow.jpeg"
+      "description": "wow"
   }
   ]
