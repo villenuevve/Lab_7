@@ -1,0 +1,41 @@
+body {
+    background-image: url("../img/background.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    min-height: 100vh;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 900px;
+    margin: 2em auto;
+    padding: 1em;
+
+    box-shadow: 0 0 20px #012344;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.gallery li:first-child {
+    margin-top: 0;
+}
+
+.gallery li {
+    margin-top: 10px;
+    max-width: 600px;
+}
+
+.gallery li img {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    user-select: none;
+}

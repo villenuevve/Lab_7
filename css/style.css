@@ -1,0 +1,56 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#gallery {
+    display: flex;
+    justify-content: space-between;
+    width: 820px;
+    box-shadow: 0 0 15px #7e7e7e;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.btn div {
+    user-select: none;
+    font-size: 90px;
+    font-weight: bold;
+}
+
+#left-btn {
+    border-right: 1px solid black;
+}
+
+#right-bth {
+    border-left: 1px solid black;
+}
+
+#content {
+    padding: 20px;
+    width: 600px;
+    height: 400px;
+}
+
+.frame {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    max-height: 400px;
+}
+
+.frame img {
+    max-width: 100%;
+    cursor: pointer;
+    height: auto;
+    user-select: none;
+}
