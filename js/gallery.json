@@ -5,47 +5,28 @@
       "description": "nature.png"
   },
   {
-      "original": "img/original/color.jpg",
+      "preview": "https://images.pexels.com/photos/23508826/pexels-photo-23508826.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "original": "https://images.pexels.com/photos/23508826/pexels-photo-23508826.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "description": "color.jpg"
   },
   {
-      "preview": "img/preview/abstract.jpg",
-      "original": "img/original/abstract.jpg",
+      "preview": "https://images.pexels.com/photos/18338026/pexels-photo-18338026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "original": "https://images.pexels.com/photos/18338026/pexels-photo-18338026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "description": "abstract.jpg"
   },
   {
-      "preview": "img/preview/flower.jpg",
-      "original": "img/original/flower.jpg",
-      "description": "flower.jpg"
+      "preview": "https://images.pexels.com/photos/22866338/pexels-photo-22866338.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      "original": "https://images.pexels.com/photos/22866338/pexels-photo-22866338.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      "description": "flower.jpeg"
   },
   {
-      "preview": "img/preview/wave.jpg",
-      "original": "img/original/wave.jpg",
+      "preview": "https://images.pexels.com/photos/13623241/pexels-photo-13623241.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      "original": "https://images.pexels.com/photos/13623241/pexels-photo-13623241.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
       "description": "wave.jpg"
   },
   {
-      "preview": "img/preview/wow.jpg",
-      "original": "img/original/wow.jpg",
-      "description": "wow.jpg"
-  },
-  {
-      "preview": "img/preview/beauty.jpg",
-      "original": "img/original/beauty.jpg",
-      "description": "beauty.jpg"
-  },
-  {
-      "preview": "img/preview/oink.jpg",
-      "original": "img/original/oink.jpg",
-      "description": "oink.jpg"
-  },
-  {
-      "preview": "img/preview/gradient.jpg",
-      "original": "img/original/gradient.jpg",
-      "description": "gradient.jpg"
-  },
-  {
-    "preview": "https://images.pexels.com/photos/22944570/pexels-photo-22944570.jpeg",
-    "original": "https://images.pexels.com/photos/22944570/pexels-photo-22944570.jpeg",
-    "description": "pexels-photo-22944570"
+      "preview": "https://images.pexels.com/photos/19221472/pexels-photo-19221472.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "original": "https://images.pexels.com/photos/19221472/pexels-photo-19221472.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "description": "wow.jpeg"
   }
   ]
