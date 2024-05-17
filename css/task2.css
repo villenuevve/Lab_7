@@ -1,41 +1,71 @@
+:root {
+    --font-family: Arial, sans-serif;
+    --background-color: #f4f7f6;
+    --form-background-color: #ffffff;
+    --form-padding: 20px;
+    --form-border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --max-width: 400px;
+    --label-margin-bottom: 15px;
+    --label-font-size: 16px;
+    --label-color: #333333;
+    --input-padding: 10px;
+    --input-margin-top: 5px;
+    --input-border: 1px solid #dddddd;
+    --input-border-radius: 4px;
+    --input-font-size: 14px;
+    --input-border-focus: #5ab4f8;
+    --input-box-shadow-focus: 0 0 5px rgba(90, 180, 248, 0.5);
+    --button-background-color: #5ab4f8;
+    --button-color: #ffffff;
+    --button-padding: 10px 15px;
+    --button-border-radius: 4px;
+    --button-font-size: 16px;
+    --button-hover-background-color: #409ad6;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f7f6;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
 }
+
 .feedback-form {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
+    background-color: var(--form-background-color);
+    padding: var(--form-padding);
+    border-radius: var(--form-border-radius);
+    box-shadow: var(--box-shadow);
+    max-width: var(--max-width);
     width: 100%;
 }
+
 .feedback-form label {
     display: block;
-    margin-bottom: 15px;
-    font-size: 16px;
-    color: #333333;
+    margin-bottom: var(--label-margin-bottom);
+    font-size: var(--label-font-size);
+    color: var(--label-color);
 }
+
 .feedback-form input[type="email"],
 .feedback-form textarea {
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #dddddd;
-    border-radius: 4px;
-    font-size: 14px;
+    padding: var(--input-padding);
+    margin-top: var(--input-margin-top);
+    border: var(--input-border);
+    border-radius: var(--input-border-radius);
+    font-size: var(--input-font-size);
     box-sizing: border-box;
 }
+
 .feedback-form input[type="email"]:focus,
 .feedback-form textarea:focus {
-    border-color: #5ab4f8;
+    border-color: var(--input-border-focus);
     outline: none;
-    box-shadow: 0 0 5px rgba(90, 180, 248, 0.5);
+    box-shadow: var(--input-box-shadow-focus);
 }
 
 .feedback-form textarea {
@@ -43,14 +73,16 @@ body {
 }
 
 .feedback-form button {
-    background-color: #5ab4f8;
-    color: #ffffff;
+    background-color: var(--button-background-color);
+    color: var(--button-color);
     border: none;
-    padding: 10px 15px;
-    border-radius: 4px;
+    padding: var(--button-padding);
+    border-radius: var(--button-border-radius);
     cursor: pointer;
-    font-size: 16px;
+    font-size: var(--button-font-size);
+    transition: background-color 0.3s ease;
 }
+
 .feedback-form button:hover {
-    background-color: #409ad6;
+    background-color: var(--button-hover-background-color);
 }

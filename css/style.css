@@ -1,3 +1,29 @@
+:root {
+    --main-bg-color: #f4f4f4;
+    --btn-padding: 0 20px;
+    --btn-font-size: 90px;
+    --btn-font-weight: bold;
+    --gallery-width: 820px;
+    --gallery-box-shadow: 0 0 15px #7e7e7e;
+    --border-color: black;
+    --content-padding: 20px;
+    --content-width: 600px;
+    --content-height: 400px;
+    --frame-max-width: 600px;
+    --frame-max-height: 400px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--main-bg-color);
+    font-family: Arial, sans-serif;
+}
+
 main {
     display: flex;
     justify-content: center;
@@ -9,48 +35,67 @@ main {
 #gallery {
     display: flex;
     justify-content: space-between;
-    width: 820px;
-    box-shadow: 0 0 15px #7e7e7e;
+    width: var(--gallery-width);
+    box-shadow: var(--gallery-box-shadow);
+    background-color: #ffffff; /* Ensure a background color for the gallery */
+    border-radius: 8px; /* Optional: add rounded corners for a modern look */
+    overflow: hidden; /* Ensure content doesn't overflow the gallery container */
 }
 
 .btn {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 20px;
+    align-items: center;
+    padding: var(--btn-padding);
     cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Light hover effect */
 }
 
 .btn div {
-    user-select: none;
-    font-size: 90px;
-    font-weight: bold;
+    font-size: var(--btn-font-size);
+    font-weight: var(--btn-font-weight);
 }
 
 #left-btn {
-    border-right: 1px solid black;
+    border-right: 1px solid var(--border-color);
 }
 
-#right-bth {
-    border-left: 1px solid black;
+#right-btn { /* Fixed the ID to match a consistent naming convention */
+    border-left: 1px solid var(--border-color);
 }
 
 #content {
-    padding: 20px;
-    width: 600px;
-    height: 400px;
+    padding: var(--content-padding);
+    width: var(--content-width);
+    height: var(--content-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9; /* Ensuring a clear separation for the content area */
+    border-radius: 8px; /* Optional: add rounded corners for a modern look */
 }
 
 .frame {
     display: flex;
     justify-content: center;
-    max-width: 600px;
-    max-height: 400px;
+    max-width: var(--frame-max-width);
+    max-height: var(--frame-max-height);
 }
 
 .frame img {
     max-width: 100%;
-    cursor: pointer;
     height: auto;
+    cursor: pointer;
     user-select: none;
+    transition: transform 0.3s ease; /* Adding smooth scaling effect */
+}
+
+.frame img:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover for interactivity */
 }

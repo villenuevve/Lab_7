@@ -1,8 +1,8 @@
 const ul = document.querySelector(".gallery");
 let figure = document.querySelector("#original");
-let lightbox;
 const previewList = [];
 let imgList = [];
+
 function loadPhotos() {
     fetch("js/gallery.json")
         .then(response => response.json())
@@ -21,21 +21,22 @@ function initList(images) {
         previewList.push(currentLi);
     }
     ul.append(...previewList);
-
-    lightbox = basicLightbox.create(figure)
 }
 
 function eventProcessor(event) {
-    let targetImg = previewList.indexOf(event.target.parentElement);
-    if (targetImg >= 0) {
-        let originalImg = document.createElement("img");
-        originalImg.src = imgList[targetImg].original;
-        originalImg.alt = imgList[targetImg].description;
+    if (event.target.tagName === 'IMG' && event.target.parentElement.tagName === 'LI') {
+        let targetImgIndex = previewList.indexOf(event.target.parentElement);
+        if (targetImgIndex >= 0) {
+            let originalImg = document.createElement("img");
+            originalImg.src = imgList[targetImgIndex].original;
+            originalImg.alt = imgList[targetImgIndex].description;
 
-        figure.replaceChildren(originalImg);
+            figure.innerHTML = ''; // Clear the figure content
+            figure.appendChild(originalImg);
 
-        lightbox = basicLightbox.create(figure);
-        lightbox.show();
+            lightbox = basicLightbox.create(figure.outerHTML);
+            lightbox.show();
+        }
     }
 }
 
@@ -43,4 +44,4 @@ window.onload = () => {
     loadPhotos();
 };
 
-window.addEventListener("click", eventProcessor);
+ul.addEventListener("click", eventProcessor);
