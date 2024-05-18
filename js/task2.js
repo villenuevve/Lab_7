@@ -1,36 +1,28 @@
 document.addEventListener('DOMContentLoaded', () => {
   const storageKey = 'feedback-form-state';
   const form = document.querySelector('.feedback-form');
-  const emailInput = form.elements.email;
-  const messageInput = form.elements.message;
+  const { email: emailInput, message: messageInput } = form.elements;
 
   const formData = {
     email: emailInput.value || '',
     message: messageInput.value || ''
   };
 
-  const updateStorage = () => {
-    localStorage.setItem(storageKey, JSON.stringify(formData));
-  };
+  const updateStorage = () => localStorage.setItem(storageKey, JSON.stringify(formData));
 
   const loadFromStorage = () => {
     const data = localStorage.getItem(storageKey);
     if (data) {
-      const loadedFormData = JSON.parse(data);
-      emailInput.value = loadedFormData.email || '';
-      messageInput.value = loadedFormData.message || '';
-      formData.email = loadedFormData.email || '';
-      formData.message = loadedFormData.message || '';
+      const { email = '', message = '' } = JSON.parse(data);
+      emailInput.value = email;
+      messageInput.value = message;
+      Object.assign(formData, { email, message });
     }
   };
 
-  const clearStorage = () => {
-    localStorage.removeItem(storageKey);
-  };
+  const clearStorage = () => localStorage.removeItem(storageKey);
 
-  const validateData = () => {
-    return formData.email.trim() && formData.message.trim();
-  };
+  const validateData = () => formData.email.trim() && formData.message.trim();
 
   const trimFields = () => {
     formData.email = formData.email.trim();
@@ -38,20 +30,17 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const clearAllFields = () => {
-    formData.email = '';
-    formData.message = '';
+    Object.assign(formData, { email: '', message: '' });
     form.reset();
   };
 
-  emailInput.addEventListener('input', (event) => {
-    formData.email = event.target.value;
+  const handleInput = ({ target: { name, value } }) => {
+    formData[name] = value;
     updateStorage();
-  });
+  };
 
-  messageInput.addEventListener('input', (event) => {
-    formData.message = event.target.value;
-    updateStorage();
-  });
+  emailInput.addEventListener('input', handleInput);
+  messageInput.addEventListener('input', handleInput);
 
   form.addEventListener('submit', (event) => {
     event.preventDefault();

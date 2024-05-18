@@ -1,41 +1,44 @@
-body {
-    background-image: url("../img/background.png");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+:root {
+    --bg-color: rgba(207, 122, 205, 0.5);
+    --box-shadow-color: #d1cd8e;
+}
 
+body {
+    background: url("../img/background.png") no-repeat center center fixed;
+    background-size: cover;
     min-height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
 }
 
 .gallery {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     max-width: 900px;
     margin: 2em auto;
     padding: 1em;
+    background-color: var(--bg-color);
+    box-shadow: 0 0 20px var(--box-shadow-color);
+}
 
-    box-shadow: 0 0 20px #d1cd8e;
-
-    background-color: rgba(207, 122, 205, 0.5);
+.gallery li {
+    margin-top: 10px;
+    max-width: 600px;
+    width: 100%;
 }
 
 .gallery li:first-child {
     margin-top: 0;
 }
 
-.gallery li {
-    margin-top: 10px;
-    max-width: 600px;
-}
-
 .gallery li img {
     cursor: pointer;
+    max-width: 100%;
+    height: auto;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
     user-select: none;
+    display: block;
 }

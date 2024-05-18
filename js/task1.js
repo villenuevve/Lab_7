@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const originalImg = document.createElement('img');
             originalImg.src = original;
             originalImg.alt = description;
-            figure.innerHTML = ''; // Clear the figure content
+            figure.innerHTML = ''; 
             figure.appendChild(originalImg);
             const lightbox = basicLightbox.create(figure.outerHTML);
             lightbox.show();
