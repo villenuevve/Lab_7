@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
+    v2.0 | 20110126
+    License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -23,50 +23,26 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
-
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
-
 body {
     line-height: 1;
-    font-family: Arial, sans-serif; /* Define a default font family */
 }
-
 ol, ul {
     list-style: none;
 }
-
 blockquote, q {
     quotes: none;
 }
-
 blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
     content: none;
 }
-
 table {
     border-collapse: collapse;
     border-spacing: 0;
-}
-
-/* Additional modern enhancements */
-* {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth; /* Enable smooth scrolling */
-    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape on mobile */
-}
-
-body {
-    min-height: 100vh;
-    background-color: #f4f4f4; /* Add a default background color */
-    color: #333; /* Define a default text color */
-    line-height: 1.6; /* Improved line-height for better readability */
 }
