@@ -1,6 +1,6 @@
 :root {
     --font-family: Arial, sans-serif;
-    --background-color: #f4f7f6;
+    --background-color: #0d045e;
     --form-background-color: #ffffff;
     --form-padding: 20px;
     --form-border-radius: 8px;
@@ -15,13 +15,13 @@
     --input-border-radius: 4px;
     --input-font-size: 14px;
     --input-border-focus: #5ab4f8;
-    --input-box-shadow-focus: 0 0 5px rgba(90, 180, 248, 0.5);
+    --input-box-shadow-focus: 0 0 5px rgba(23, 121, 195, 0.5);
     --button-background-color: #5ab4f8;
     --button-color: #ffffff;
     --button-padding: 10px 15px;
     --button-border-radius: 4px;
     --button-font-size: 16px;
-    --button-hover-background-color: #409ad6;
+    --button-hover-background-color: #1e699c;
 }
 
 body {

@@ -37,9 +37,9 @@ main {
     justify-content: space-between;
     width: var(--gallery-width);
     box-shadow: var(--gallery-box-shadow);
-    background-color: #ffffff; /* Ensure a background color for the gallery */
-    border-radius: 8px; /* Optional: add rounded corners for a modern look */
-    overflow: hidden; /* Ensure content doesn't overflow the gallery container */
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    overflow: hidden; 
 }
 
 .btn {
@@ -50,11 +50,11 @@ main {
     padding: var(--btn-padding);
     cursor: pointer;
     user-select: none;
-    transition: background-color 0.3s ease; /* Smooth background transition */
+    transition: background-color 0.3s ease; 
 }
 
 .btn:hover {
-    background-color: rgba(0, 0, 0, 0.1); /* Light hover effect */
+    background-color: rgba(0, 0, 0, 0.1); 
 }
 
 .btn div {
@@ -66,7 +66,7 @@ main {
     border-right: 1px solid var(--border-color);
 }
 
-#right-btn { /* Fixed the ID to match a consistent naming convention */
+#right-btn { 
     border-left: 1px solid var(--border-color);
 }
 
@@ -77,8 +77,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f9f9f9; /* Ensuring a clear separation for the content area */
-    border-radius: 8px; /* Optional: add rounded corners for a modern look */
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
 }
 
 .frame {
@@ -93,9 +93,9 @@ main {
     height: auto;
     cursor: pointer;
     user-select: none;
-    transition: transform 0.3s ease; /* Adding smooth scaling effect */
+    transition: transform 0.3s ease;
 }
 
 .frame img:hover {
-    transform: scale(1.05); /* Slightly enlarge image on hover for interactivity */
+    transform: scale(1.05); 
 }

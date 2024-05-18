@@ -1,10 +1,5 @@
 [
   {
-      "preview": "img/preview/nature.png",
-      "original": "img/original/nature.png",
-      "description": "nature.png"
-  },
-  {
       "preview": "https://images.pexels.com/photos/21326841/pexels-photo-21326841.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "original": "https://images.pexels.com/photos/21326841/pexels-photo-21326841.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "description": "sea"
