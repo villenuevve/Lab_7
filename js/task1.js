@@ -27,20 +27,20 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const eventProcessor = (event) => {
-    if (event.target.tagName === 'IMG' && event.target.parentElement.tagName === 'LI') {
-        const targetImgIndex = [...ul.children].indexOf(event.target.parentElement);
-        if (targetImgIndex >= 0) {
-            const { original, description } = imgList[targetImgIndex];
-            const originalImg = document.createElement('img');
-            originalImg.src = original;
-            originalImg.alt = description;
-            figure.innerHTML = ''; 
-            figure.appendChild(originalImg);
-            const lightbox = basicLightbox.create(figure.outerHTML);
-            lightbox.show();
+        if (event.target.tagName === 'IMG' && event.target.parentElement.tagName === 'LI') {
+            const targetImgIndex = [...ul.children].indexOf(event.target.parentElement);
+            if (targetImgIndex >= 0) {
+                const { original, description } = imgList[targetImgIndex];
+                figure.innerHTML = ''; 
+                const originalImg = document.createElement('img');
+                originalImg.src = original;
+                originalImg.alt = description;
+                figure.appendChild(originalImg);
+                const lightbox = basicLightbox.create(figure.outerHTML);
+                lightbox.show();
+            }
         }
-    }
-};
+    };    
 
     loadPhotos();
     ul.addEventListener('click', eventProcessor);

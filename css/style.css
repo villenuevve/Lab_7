@@ -1,56 +1,68 @@
-main {
+:root {
+    --background-image: url("../img/background.png");
+    --background-color-overlay: rgba(0, 0, 0, 0.5);
+    --box-shadow: 0 0 20px #012344;
+    --gallery-max-width: 900px;
+    --gallery-margin: 2em auto;
+    --gallery-padding: 1em;
+    --gallery-li-margin-top: 10px;
+    --gallery-li-max-width: 600px;
+    --body-font-family: Arial, sans-serif;
+    --body-text-color: #fff;
+    --border-radius: 10px;
+    --transition-duration: 0.3s;
+    --hover-scale: 1.05;
+}
+
+body {
+    background-image: var(--background-image);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    font-family: var(--body-font-family);
+    color: var(--body-text-color);
 }
 
-#gallery {
-    display: flex;
-    justify-content: space-between;
-    width: 820px;
-    box-shadow: 0 0 15px #7e7e7e;
-}
-
-.btn {
+.gallery {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 0 20px;
+    align-items: center;
+    max-width: var(--gallery-max-width);
+    margin: var(--gallery-margin);
+    padding: var(--gallery-padding);
+    box-shadow: var(--box-shadow);
+    background-color: var(--background-color-overlay);
+    border-radius: var(--border-radius);
+}
+
+.gallery li:first-child {
+    margin-top: 0;
+}
+
+.gallery li {
+    margin-top: var(--gallery-li-margin-top);
+    max-width: var(--gallery-li-max-width);
+    width: 100%;
+}
+
+.gallery li img {
     cursor: pointer;
+    border-radius: 5px;
+    transition: transform var(--transition-duration) ease;
 }
 
-.btn div {
-    user-select: none;
-    font-size: 90px;
-    font-weight: bold;
+.gallery li img:hover {
+    transform: scale(var(--hover-scale));
 }
 
-#left-btn {
-    border-right: 1px solid black;
-}
-
-#right-bth {
-    border-left: 1px solid black;
-}
-
-#content {
-    padding: 20px;
-    width: 600px;
-    height: 400px;
-}
-
-.frame {
-    display: flex;
-    justify-content: center;
-    max-width: 600px;
-    max-height: 400px;
-}
-
-.frame img {
+img {
     max-width: 100%;
-    cursor: pointer;
     height: auto;
     user-select: none;
+    display: block;
 }
