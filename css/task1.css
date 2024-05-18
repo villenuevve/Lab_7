@@ -1,38 +1,24 @@
-:root {
-    --background-image: url("../img/background.png");
-    --background-color-overlay: rgba(0, 0, 0, 0.5);
-    --box-shadow: 0 0 20px #012344;
-    --gallery-max-width: 900px;
-    --gallery-margin: 2em auto;
-    --gallery-padding: 1em;
-    --gallery-li-margin-top: 10px;
-    --gallery-li-max-width: 600px;
-}
-
 body {
-    background-image: var(--background-image);
+    background-image: url("../img/background.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+
     min-height: 100vh;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, sans-serif;
-    color: #fff; /* Ensures text is readable on dark background */
 }
 
 .gallery {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: var(--gallery-max-width);
-    margin: var(--gallery-margin);
-    padding: var(--gallery-padding);
-    box-shadow: var(--box-shadow);
-    background-color: var(--background-color-overlay);
-    border-radius: 10px; /* Adding rounded corners for a smoother look */
+
+    max-width: 900px;
+    margin: 2em auto;
+    padding: 1em;
+
+    box-shadow: 0 0 20px #012344;
+
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .gallery li:first-child {
@@ -40,24 +26,16 @@ body {
 }
 
 .gallery li {
-    margin-top: var(--gallery-li-margin-top);
-    max-width: var(--gallery-li-max-width);
-    width: 100%;
+    margin-top: 10px;
+    max-width: 600px;
 }
 
 .gallery li img {
     cursor: pointer;
-    border-radius: 5px; /* Adding a slight border-radius to images */
-    transition: transform 0.3s ease; /* Adding a smooth transition for scaling */
-}
-
-.gallery li img:hover {
-    transform: scale(1.05); /* Slightly scale up the image on hover */
 }
 
 img {
     max-width: 100%;
     height: auto;
     user-select: none;
-    display: block; /* Ensures images don't leave unwanted spaces below them */
 }
