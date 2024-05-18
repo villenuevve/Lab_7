@@ -39,7 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const lightbox = basicLightbox.create(figure.outerHTML);
             lightbox.show();
         }
-    }};
+    }
+};
 
     loadPhotos();
     ul.addEventListener('click', eventProcessor);
